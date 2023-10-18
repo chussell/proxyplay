@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "proxyplay"
+client_id = "cdee30d89145763c737205ff8f9a07b1"
+application_url = "https://falls-jobs-diagnosis-zoo.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://falls-jobs-diagnosis-zoo.trycloudflare.com/auth/callback",
+  "https://falls-jobs-diagnosis-zoo.trycloudflare.com/auth/shopify/callback",
+  "https://falls-jobs-diagnosis-zoo.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "chussell-admin-extensions.myshopify.com"
